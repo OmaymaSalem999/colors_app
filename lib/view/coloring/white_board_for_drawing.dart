@@ -60,19 +60,13 @@ class _WhiteBoardState extends State<WhiteBoard> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                        width: 150.0.w,
+                        width: 100.0.w,
                         height: 80.0.w,
                         decoration: const BoxDecoration(
                           image: DecorationImage(image: AssetImage('assets/images/coloring/Art.png'),fit: BoxFit.fill),
                         ),
                       ),
-                      Container(
-                      width: 100.0.w,
-                      height: 80.0.w,
-                      decoration:const  BoxDecoration(
-                        image: DecorationImage(image: AssetImage('assets/images/coloring/colorful_earth.png'),fit: BoxFit.fill),
-                      ),
-                    ),
+                    
                       ],
                     ),
                   ),

@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: const Color.fromARGB(255, 243, 182, 52),
             ),
         
-            SizedBox(height:12.0.h,),
+            SizedBox(height:12.0.w,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,

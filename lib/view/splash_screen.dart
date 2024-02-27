@@ -61,8 +61,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
             ),
 
               child: Padding(
-                  padding: EdgeInsets.only(top: 50.0.w,
-                  bottom: 20.0.w),
+                  padding: EdgeInsets.only(top: 60.0.w,
+                  bottom: 30.0.w),
                   child: SingleChildScrollView(
                     child: Column(
                           

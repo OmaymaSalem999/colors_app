@@ -65,13 +65,13 @@ class _Example2State extends State<Example2> {
                           boarderRadius: 10.0,
                         )),
                     SizedBox(
-                      height: 300.0.w,
-                      width: 350.0.w,
+                      height: 250.0.w,
+                      width: 300.0.w,
                       child: Stack(
                         children: [
                           CommonImageContainer(
-                            hight: 300.0.w,
-                            width: 350.0.w,
+                            hight: 250.0.w,
+                            width: 300.0.w,
                             image: 'assets/images/coloring/white_paper.png',
                           ),
                           Padding(
@@ -85,8 +85,8 @@ class _Example2State extends State<Example2> {
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     CommonImageContainer(
-                                        hight: 250.w,
-                                        width: 300.w,
+                                        hight: 200.w,
+                                        width: 250.w,
                                         image:
                                             'assets/images/coloring/coloring_page_2/elephant.jpeg')
                                   ]),
