@@ -22,7 +22,7 @@ class CommonRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
+        SizedBox(
           height: 180.0.w,
           width: 180.0.w,
           child: Stack(
@@ -30,7 +30,7 @@ class CommonRow extends StatelessWidget {
               Container(
                 height: 180.0.w,
                 width: 180.0.w,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage(
                         'assets/images/coloring/picture_container.png'),
@@ -45,7 +45,7 @@ class CommonRow extends StatelessWidget {
                 ),
                 child:
                     Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-                  Container(
+                  SizedBox(
                     height: 100.0.w,
                     width: 170.0.w,
                     child: IconButton(
@@ -65,7 +65,7 @@ class CommonRow extends StatelessWidget {
             ],
           ),
         ),
-        Container(
+        SizedBox(
           height: 180.0.w,
           width: 180.0.w,
           child: Stack(
@@ -73,7 +73,7 @@ class CommonRow extends StatelessWidget {
               Container(
                 height: 180.0.w,
                 width: 180.0.w,
-                decoration: BoxDecoration(
+                decoration:const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
                           'assets/images/coloring/picture_container.png')),
@@ -87,7 +87,7 @@ class CommonRow extends StatelessWidget {
                 ),
                 child:
                     Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-                  Container(
+                  SizedBox(
                     height: 100.0.w,
                     width: 170.0.w,
                     child: IconButton(

@@ -6,7 +6,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../coloring_page_controller.dart';
+import '../../viewmodel/matching_colors_view_model/coloring_page_controller.dart';
 import '../../shared_components/coloring/whiteboard.dart';
 
 class WhiteBoard extends StatefulWidget {
@@ -167,7 +167,7 @@ class _WhiteBoardState extends State<WhiteBoard> {
                                     image: 'assets/images/coloring/exit.png',
                                     onTap: () {
                                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                        return  HomeScreen();
+                                                        return const HomeScreen();
                                                       }));
                                     },
                                   ),

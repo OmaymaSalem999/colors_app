@@ -116,7 +116,7 @@ class _DragDrop7State extends State<DragDrop7> {
                                             return DialogContainer(color:const Color.fromARGB(255, 169, 52, 204),borderColor: Colors.white,
                                             onPressed: (){
                                                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                return  HomeScreen();
+                                                return const HomeScreen();
                                               }));
                                             },
                                             onTap: (){

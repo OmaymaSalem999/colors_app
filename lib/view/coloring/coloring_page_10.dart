@@ -1,12 +1,12 @@
 import 'dart:math';
 
 import 'package:audioplayers/audioplayers.dart';
-import 'package:color_app/coloring_page_controller.dart';
+import 'package:color_app/viewmodel/matching_colors_view_model/coloring_page_controller.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../screen_screen.dart';
+import '../../viewmodel/matching_colors_view_model/screen_screen.dart';
 import '../../shared_components/coloring/whiteboard.dart';
 
 class Example10 extends StatefulWidget {
@@ -23,7 +23,7 @@ class _Example10State extends State<Example10> {
   List<Color> colors = [
 
     Colors.amber,
-    Color.fromARGB(255, 180, 149, 107),
+    const Color.fromARGB(255, 180, 149, 107),
     Colors.red.shade700,
     Colors.lightGreen.shade600,
     Colors.brown.shade600,
@@ -180,7 +180,7 @@ class _Example10State extends State<Example10> {
                             image: 'assets/images/coloring/exit.png',
                             onTap: () {
                               Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                return Screen();
+                                                return const Screen();
                                               }));
                             },
                           ),

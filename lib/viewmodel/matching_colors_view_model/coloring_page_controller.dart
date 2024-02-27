@@ -1,4 +1,4 @@
-import 'package:color_app/shared_components/coloring/whiteboard.dart';
+
 import 'package:flutter/material.dart';
 
 class FixedContainer extends StatelessWidget {
@@ -60,7 +60,7 @@ class CommonIconContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: height,
       width: width,
       child: IconButton(

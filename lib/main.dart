@@ -1,8 +1,5 @@
 
-import 'package:color_app/view/coloring/white_board_for_drawing.dart';
-
-
-
+import 'package:color_app/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -32,7 +29,7 @@ class MyApp extends StatelessWidget {
         );
       },
       
-      child:const WhiteBoard(),
+      child:const Splash(),
     );
   }
 }

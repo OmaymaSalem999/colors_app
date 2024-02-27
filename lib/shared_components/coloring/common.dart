@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class Common extends StatefulWidget {
 
-   Common({super.key});
+   const Common({super.key});
 
   @override
   State<Common> createState() => _CommonState();

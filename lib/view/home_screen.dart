@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../screen_screen.dart';
+import '../viewmodel/matching_colors_view_model/screen_screen.dart';
 import 'matching_colors/view_page_1.dart';
 
 
@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                
                   children: [
                     Expanded(child: Container(),),
-                    WindowButton(),
+                    const WindowButton(),
                   ],
                 ),
               ),

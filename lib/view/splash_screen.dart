@@ -20,12 +20,12 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     player1.play(AssetSource('children_logo.mp3'));
-    Future.delayed(const Duration(seconds:1000 ),(){
+    Future.delayed(const Duration(seconds:10 ),(){
       
      
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context){
         player.play(AssetSource('smile.mp3'));
-        return HomeScreen( );
+        return const HomeScreen( );
         
         }));
 

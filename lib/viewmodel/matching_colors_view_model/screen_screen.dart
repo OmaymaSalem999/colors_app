@@ -105,7 +105,7 @@ class _ScreenState extends State<Screen> {
                               onPressed: () {
                                 player.play(AssetSource('button_music.wav'));
                                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                return  HomeScreen();
+                                                return const  HomeScreen();
                                               }));
                               },
                             ),

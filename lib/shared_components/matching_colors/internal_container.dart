@@ -38,7 +38,7 @@ class ViewModel extends StatelessWidget {
               Container(
           height: 30.0.h,
           width: 30.0.w,
-           decoration: BoxDecoration(
+           decoration:const BoxDecoration(
             image: DecorationImage(image: AssetImage('assets/images/stars_left.png')),
            ),
         ),
@@ -57,7 +57,7 @@ class ViewModel extends StatelessWidget {
              Container(
           height: 30.0.h,
           width: 30.0.w,
-           decoration: BoxDecoration(
+           decoration:const BoxDecoration(
             image: DecorationImage(image: AssetImage('assets/images/stars_left.png')),
            ),
         ),
