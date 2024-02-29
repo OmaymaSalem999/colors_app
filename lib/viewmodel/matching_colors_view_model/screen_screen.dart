@@ -65,7 +65,7 @@ class _ScreenState extends State<Screen> {
                                   ),
                                 ),
                                 Padding(
-                                  padding:  EdgeInsets.only(top: 23.0.w),
+                                  padding:  EdgeInsets.only(top: 20.0.w),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -95,10 +95,10 @@ class _ScreenState extends State<Screen> {
                             padding:  EdgeInsets.only(top: 30.0.w),
                             child: IconButton(
                               icon: Container(
+                                height: 50.0.w,
+                                width: 50.0.w,
                                 decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/coloring/brown_false.png')),
+                                  image: DecorationImage(image: AssetImage('assets/images/coloring/brown_false.png'),fit: BoxFit.fill)
                                 ),
                               ),
                               iconSize: 50.0.sp,

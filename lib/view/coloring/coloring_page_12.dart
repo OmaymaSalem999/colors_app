@@ -139,23 +139,28 @@ class _Example12State extends State<Example12> {
                 children: [
                   SizedBox(
                     width: 135.0.w,
+                    height:400.0.w,
                     child: Row(children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 30.0.sp, bottom: 30.0.sp),
+                        padding: EdgeInsets.only(top: 40.0.sp, bottom: 30.0.sp),
                         child: SingleChildScrollView(
                           child: Column(
                             children: [
                               BottomAppBar(
+                                height:400.0.w,
+                                color: Colors.transparent,
                                 child: Container(
                                   color: const Color.fromARGB(255, 255, 253, 248),
                                   padding: const EdgeInsets.all(14.0),
-                                  child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: List.generate(
-                                        colors.length,
-                                        (index) =>
-                                            _buildColorChose(colors[index])),
+                                  child: SingleChildScrollView(
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceAround,
+                                      children: List.generate(
+                                          colors.length,
+                                          (index) =>
+                                              _buildColorChose(colors[index])),
+                                    ),
                                   ),
                                 ),
                               ),

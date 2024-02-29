@@ -1,8 +1,8 @@
 
 import 'package:color_app/view/splash_screen.dart';
+import 'package:color_app/viewmodel/matching_colors_view_model/screen_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 
 void main() {
 

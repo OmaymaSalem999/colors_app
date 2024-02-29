@@ -35,13 +35,13 @@ class DialogContainer extends StatelessWidget {
                 
                 children: [
                   SizedBox(
-                    height: 30.0.h,
-                    width: 100.0.w,
+                    height: 60.0.h,
+                    width: 170.0.w,
                     child:Center(
-                      child: Text('Complete level',
+                      child: Text('Level Complete',
                       style: GoogleFonts.boogaloo(
                         color: Colors.white,
-                        fontSize:20.0.w,
+                        fontSize:30.0.w,
                         fontWeight: FontWeight.bold,
                       ),
                       ),
@@ -126,13 +126,13 @@ class DialogContainer2 extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: 30.0.h,
-                  width: 100.0.w,
+                  height: 35.0.h,
+                  width: 170.0.w,
                   child:Center(
-                    child: Text('Complete level',
+                    child: Text('Level Complete',
                     style: GoogleFonts.boogaloo(
                       color: Colors.white,
-                      fontSize:20.0.sp,
+                      fontSize:20.0.w,
                       fontWeight: FontWeight.bold,
                     ),
                     ),

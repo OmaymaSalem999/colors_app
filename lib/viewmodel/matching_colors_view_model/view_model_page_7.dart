@@ -7,7 +7,7 @@ import '../../shared_components/matching_colors/color_model.dart';
 import '../../shared_components/matching_colors/dialog.dart';
 import '../../shared_components/matching_colors/images.dart';
 import '../../view/home_screen.dart';
-import '../../view/matching_colors/view_page_4.dart';
+
 
 class DragDrop6 extends StatefulWidget {
   const DragDrop6({super.key});

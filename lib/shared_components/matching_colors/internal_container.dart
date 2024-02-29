@@ -48,7 +48,7 @@ class ViewModel extends StatelessWidget {
               child: Text('MATCH BY COLOR',
               style: GoogleFonts.boogaloo(
                 color: Colors.white,
-                fontSize: 30.0.sp,
+                fontSize: 20.0.w,
               ),
               
               ),

@@ -1,10 +1,11 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FixedContainer extends StatelessWidget {
   const FixedContainer({super.key});
 
-  @override
+  @override     
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
@@ -60,18 +61,21 @@ class CommonIconContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: height,
-      width: width,
-      child: IconButton(
-          icon: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(image),
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 10.0.w),
+      child: SizedBox(
+        height: height,
+        width: width,
+        child: IconButton(
+            icon: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(image),
+                ),
               ),
             ),
-          ),
-          onPressed: onTap),
+            onPressed: onTap),
+      ),
     );
   }
 }

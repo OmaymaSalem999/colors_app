@@ -1,11 +1,9 @@
 
-
 import 'package:audioplayers/audioplayers.dart';
-import 'package:color_app/view/home_screen.dart';
+import 'package:color_app/viewmodel/matching_colors_view_model/screen_screen.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../viewmodel/matching_colors_view_model/coloring_page_controller.dart';
 import '../../shared_components/coloring/whiteboard.dart';
 
@@ -60,8 +58,8 @@ class _WhiteBoardState extends State<WhiteBoard> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                        width: 100.0.w,
-                        height: 80.0.w,
+                        width: 80.0.w,
+                        height: 60.0.w,
                         decoration: const BoxDecoration(
                           image: DecorationImage(image: AssetImage('assets/images/coloring/Art.png'),fit: BoxFit.fill),
                         ),
@@ -112,21 +110,23 @@ class _WhiteBoardState extends State<WhiteBoard> {
       ),
     
            
-                Row(
-                  children:[ 
-    
-                    SizedBox(
-                      width: 135.0.w,
-                      height: double.infinity,
-                      child: Row(
-                        children: [
-                         SingleChildScrollView(
-                            child: Column(
-                              children: [
-                                BottomAppBar(
-                                  child: Container(
-                                    color: const Color.fromARGB(255, 221, 174, 156),
-                                    padding: const EdgeInsets.all(20.0),
+                  Row(
+                children: [
+                  SizedBox(
+                    width: 135.0.w,
+                    height:600.0.w,
+                    child: Row(
+                      children: [
+                       SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              BottomAppBar(
+                                height:600.0.w,
+                                color: const Color.fromARGB(255, 182, 129, 111),
+                                child: Container(
+                                  color: const Color.fromARGB(255, 252, 230, 215),
+                                  padding: const EdgeInsets.all(14.0),
+                                  child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceAround,
@@ -137,107 +137,93 @@ class _WhiteBoardState extends State<WhiteBoard> {
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
-                          ),
-                      
-                      ]),
-                    ),
-                    
-                     const Spacer(),
-                    Container(
-                      height: double.infinity,
-                      width: 65.0.w,
-                      color: const Color.fromARGB(255, 221, 174, 156),
-                      
-                          child: SingleChildScrollView(
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(vertical: 20.0.w),
-                              child: Column(
-                                children: [
-                                  CommonIconContainer(
-                                    height: 50.0.w,
-                                    width: 50.0.w,
-                                    image: 'assets/images/coloring/exit.png',
-                                    onTap: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                        return const HomeScreen();
-                                                      }));
-                                    },
-                                  ),
-                                  SizedBox(
-                                    height: 10.0.w,
-                                  ),
-                                  CommonIconContainer(
-                                    height: 45.0.w,
-                                    width: 45.0.w,
-                                    image: 'assets/images/coloring/undo.png',
-                                    onTap: () {
-                                      setState(() {
-                                        if (drawingPoints.isNotEmpty &&
-                                            historyDrawingPoints.isNotEmpty) {
-                                          setState(() {
-                                            drawingPoints.removeLast();
-                                          });
-                                        }
-                                      });
-                                    },
-                                  ),
-                                  SizedBox(
-                                    height: 10.0.w,
-                                  ),
-                                  CommonIconContainer(
-                                    height: 50.0.w,
-                                    width: 50.0.w,
-                                    image: 'assets/images/coloring/redo.png',
-                                    onTap: () {
-                                      setState(() {
-                                        if (drawingPoints.length <
-                                            historyDrawingPoints.length) {
-                                          final index = drawingPoints.length;
-                                          drawingPoints
-                                              .add(historyDrawingPoints[index]);
-                                        }
-                                      });
-                                    },
-                                  ),
-                                  SizedBox(
-                                    height: 10.0.w,
-                                  ),
-                                  CommonIconContainer(
-                                      height: 70.0.w,
-                                      width: 70.0.w,
-                                      image: 'assets/images/coloring/eraser.png',
-                                      onTap: () {
-                                        setState(() => drawingPoints = []);
-                                      }),
-                                  SizedBox(
-                                    height: 10.0.w,
-                                  ),
-                                  CommonIconContainer(
-                                    height: 90.0.w,
-                                    width: 90.0.w,
-                                    image: 'assets/images/coloring/surprise.png',
-                                    onTap: () {
-                                       player.play(AssetSource('Yay_Sound.mp3'));
-                                        if (isPlaying) {
-                                _controller.stop();
-                              } else {
-                                _controller.play();
-                              }
-                              isPlaying = !isPlaying;
-                                     
-                                      
-                                    },
-                                  )
-                                ],
                               ),
-                            ),
+                            ],
                           ),
-                        
+                        ),
+                      
+                    ]),
+                  ),
+                  const Spacer(),
+                   Container(
+                      color: const Color.fromARGB(255, 182, 129, 111),
+                      width: 70.0.w,
+                      height: 600.0.w,
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            CommonIconContainer(
+                              height: 50.0.w,
+                              width: 50.0.w,
+                              image: 'assets/images/coloring/exit.png',
+                              onTap: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context){
+                                                  return const Screen();
+                                                }));
+                              },
+                            ),
+                           
+                            CommonIconContainer(
+                              height: 45.0.w,
+                              width: 45.0.w,
+                              image: 'assets/images/coloring/undo.png',
+                              onTap: () {
+                                setState(() {
+                                  if (drawingPoints.isNotEmpty &&
+                                      historyDrawingPoints.isNotEmpty) {
+                                    setState(() {
+                                      drawingPoints.removeLast();
+                                    });
+                                  }
+                                });
+                              },
+                            ),
+                           
+                            CommonIconContainer(
+                              height: 50.0.w,
+                              width: 50.0.w,
+                              image: 'assets/images/coloring/redo.png',
+                              onTap: () {
+                                setState(() {
+                                  if (drawingPoints.length <
+                                      historyDrawingPoints.length) {
+                                    final index = drawingPoints.length;
+                                    drawingPoints
+                                        .add(historyDrawingPoints[index]);
+                                  }
+                                });
+                              },
+                            ),
+                            
+                            CommonIconContainer(
+                                height: 70.0.w,
+                                width: 70.0.w,
+                                image: 'assets/images/coloring/eraser.png',
+                                onTap: () {
+                                  setState(() => drawingPoints = []);
+                                }),
+                            
+                            CommonIconContainer(
+                              height: 70.0.w,
+                              width: 70.0.w,
+                              image: 'assets/images/coloring/surprise.png',
+                              onTap: () {
+                                player.play(AssetSource('Yay_Sound.mp3'));
+                                if (isPlaying) {
+                                  _controller.stop();
+                                } else {
+                                  _controller.play();
+                                }
+                                isPlaying = !isPlaying;
+                              },
+                            )
+                          ],
+                        ),
+                      ),
                     ),
-                  ],
-                ),
+                  
+                ],
+              ),
           ],
     
     
@@ -274,15 +260,15 @@ class _WhiteBoardState extends State<WhiteBoard> {
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 20.0.w),
         child: Container(
-          width: isSelected ? 30.0.w : 20.0.w,
-          height: isSelected ? 30.0.w : 20.0.w,
+          width: isSelected ? 25.0.w : 20.0.w,
+          height: isSelected ? 25.0.w : 20.0.w,
           decoration: BoxDecoration(
             color: color,
             shape: BoxShape.circle,
             border: isSelected
                 ? Border.all(
                     color: Colors.white,
-                    width: 3.0.sp,
+                    width: 2.0.sp,
                   )
                 : null,
           ),
