@@ -1,23 +1,18 @@
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:color_app/view/coloring/white_board_for_drawing.dart';
+import 'package:color_app/view/learning/learning_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../viewmodel/matching_colors_view_model/screen_screen.dart';
 import 'matching_colors/view_page_1.dart';
-
-
 class HomeScreen extends StatefulWidget {
  
    const HomeScreen({
     super.key,
     
     });
-  
-
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -109,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         width: 170.0.w,
                         child: IconButton(icon:Container(
                           decoration: const BoxDecoration(
-                            image: DecorationImage(image: AssetImage('assets/matching_colors.png'),fit: BoxFit.fill),
+                            image: DecorationImage(image: AssetImage('assets/images/matching.png'),fit: BoxFit.fill),
                           ),
                         ) ,onPressed: (){
                          
@@ -122,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                      
                         },),
                                    ),
-                         Text('Match by Color',
+                         Text('Color Matching',
                          style: GoogleFonts.boogaloo(
                           fontSize: 20.0.w,
                           foreground: Paint()..style=PaintingStyle.stroke..strokeWidth=2..color=const Color.fromARGB(255, 58, 66, 175)
@@ -159,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     
                         },),
                       ),
-                         Text('Color Time',
+                         Text('Coloring',
                            style: GoogleFonts.boogaloo(
                             fontSize: 20.0.w,
                             foreground: Paint()..style=PaintingStyle.stroke..strokeWidth=2..color=const Color.fromARGB(255, 58, 66, 175)
@@ -184,21 +179,21 @@ class _HomeScreenState extends State<HomeScreen> {
                        children: [
                         SizedBox(
                       height: 70.0.w,
-                        width: 170.0.w,
+                        width: 100.0.w,
                        
                         child: IconButton(icon:Container(
                           decoration: const BoxDecoration(
-                            image: DecorationImage(image: AssetImage('assets/drawer.png')),
+                            image: DecorationImage(image: AssetImage('assets/images/learning_colors/learning_colors.png'),fit: BoxFit.fill),
                           ),
                         ) ,onPressed: (){
                           player.play(AssetSource('button_music.wav'));
                            Navigator.push(context, MaterialPageRoute(builder: (context){
-                                                        return const WhiteBoard();
+                                                        return const LearningColors();
                                                       }));
                      
                         },),
                                    ),
-                                   Text('Drawing',
+                                   Text('Learning colors',
                            style: GoogleFonts.boogaloo(
                             fontSize: 20.0.w,
                             foreground: Paint()..style=PaintingStyle.stroke..strokeWidth=2..color=const Color.fromARGB(255, 58, 66, 175)

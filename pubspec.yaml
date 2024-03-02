@@ -32,6 +32,9 @@ dependencies:
   lottie: ^2.0.0
   confetti: ^0.7.0
   bitsdojo_window: ^0.1.4
+  media_kit: ^1.1.10                             
+  media_kit_video: ^1.2.4                        
+  media_kit_libs_video: ^1.0.4 
 
   
 
@@ -80,6 +83,7 @@ flutter:
    - assets/images/matching_colors/matching_colors_page_10/
    - assets/images/matching_colors/matching_colors_page_11/
    - assets/images/coloring/brown_false.png
+   - assets/images/learning_colors/
 
 
    

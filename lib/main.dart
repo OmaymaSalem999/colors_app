@@ -1,10 +1,12 @@
 
-import 'package:color_app/view/splash_screen.dart';
-import 'package:color_app/viewmodel/matching_colors_view_model/screen_screen.dart';
+import 'package:color_app/view/learning/learning_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:media_kit/media_kit.dart';
 
 void main() {
+   WidgetsFlutterBinding.ensureInitialized();
+  MediaKit.ensureInitialized();
 
   runApp(const MyApp());
 }
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         );
       },
       
-      child:const Splash(),
+      child:const LearningColors (),
     );
   }
 }
