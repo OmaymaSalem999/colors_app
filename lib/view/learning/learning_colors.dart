@@ -35,7 +35,7 @@ class _LearningColorsState extends State<LearningColors> {
           decoration: BoxDecoration(
               color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
           child: Padding(
-            padding: EdgeInsets.only(top: 20.0.w),
+            padding: EdgeInsets.only(top: 30.0.w),
             child: SingleChildScrollView(
               child: Column(
                 children: [

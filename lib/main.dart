@@ -1,4 +1,5 @@
 
+import 'package:color_app/view/learning/black.dart';
 import 'package:color_app/view/learning/learning_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         );
       },
       
-      child:const LearningColors (),
+      child:const LearningColors(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:color_app/view/learning/green.dart';
 import 'package:color_app/view/learning/learning_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 
@@ -56,25 +57,25 @@ class _VideoAppState extends State<Brown> {
          
         },
         icon: const Icon(Icons.clear),
-        iconSize:40.0,
+        iconSize:20.0.w,
       ),
     ],
     // Modify bottom button bar:
     bottomButtonBar: [
       const Spacer(),
     
-     const SizedBox(width: 20.0,),
-     const  MaterialDesktopPlayOrPauseButton(
-      iconSize: 50.0,
+      SizedBox(width: 20.0.w,),
+      MaterialDesktopPlayOrPauseButton(
+      iconSize: 30.0.w,
      ),
-     const SizedBox(width: 20.0,),
+     SizedBox(width: 20.0.w,),
      IconButton(onPressed:(){
        player.dispose();
 
         Navigator.push(context, MaterialPageRoute(builder: (context){
                                                         return const Green();
                                                       }));
-     }, icon:const Icon(Icons.arrow_forward_outlined),color: Colors.white,iconSize: 50.0,),
+     }, icon:const Icon(Icons.arrow_forward_outlined),color: Colors.white,iconSize: 30.0.w,),
      const  Spacer(),
      
     ],
