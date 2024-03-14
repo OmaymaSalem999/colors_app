@@ -1,6 +1,5 @@
 
-import 'package:color_app/view/learning/black.dart';
-import 'package:color_app/view/learning/learning_colors.dart';
+import 'package:color_app/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:media_kit/media_kit.dart';
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
         );
       },
       
-      child:const LearningColors(),
+      child:const Splash(),
     );
   }
 }
